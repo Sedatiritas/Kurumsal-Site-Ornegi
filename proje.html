@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -88,7 +88,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script>const projects = { yalikavak: { title: 'Yalıkavak <em>Evi.</em>', type: 'Konut / Bodrum', place: 'Bodrum', scope: 'Mimari tasarım', lead: 'Doğal taş, su ve gölge aracılığıyla kıyıyla sessiz bir ilişki kuran bir ev önerisi.', story: 'Kütle, arazinin doğal eğimi boyunca geri çekilerek ilerler. Avlu ve su yüzeyi, içerideki yaşamı günün değişen ışığına açan sakin eşikler oluşturur.', image: 'public/project-bodrum.png' }, arsiv: { title: 'Arşiv <em>Evi.</em>', type: 'Kültür / İstanbul', place: 'İstanbul', scope: 'İç mekân tasarımı', lead: 'Bilgiyi saklayan değil, insanı bilginin çevresinde bir araya getiren bir kültür mekânı.', story: 'Kemerler, kitaplıklar ve tavan açıklığı; programın farklı hızlarını birbirine bağlar. Ahşap ve sıvanın dengesi, odaklanma ile karşılaşma için yumuşak bir arka plan oluşturur.', image: 'public/project-library.png' }, vadi: { title: 'Vadi <em>Ofisleri.</em>', type: 'İşyeri / İstanbul', place: 'İstanbul', scope: 'Mekân stratejisi', lead: 'Çalışma alanını açık planın ötesinde, farklı odak biçimlerine cevap veren bir ekosistem olarak düşünüyor.', story: 'Dolaşım, ortak kullanım ve odak alanları arasında kurulan geçirgenlik; gün içindeki farklı çalışma ritimlerine alan açar.', image: 'public/hero-architecture.png' }, orman: { title: 'Orman <em>Avlusu.</em>', type: 'Konut / İstanbul', place: 'İstanbul', scope: 'Mimari tasarım', lead: 'Yapının içine çekilen avlu, doğayı izlenen bir manzara olmaktan çıkarıp hayatın merkezine alır.', story: 'Avlu etrafında yerleşen hacimler, gün ışığı ve rüzgârla beraber değişen bir gündelik yaşam kurgusu oluşturur.', image: 'public/hero-architecture.png' } }; const data = projects[new URLSearchParams(location.search).get('project')] || projects.yalikavak; document.title = data.title.replace(/<[^>]*>/g, '') + ' — NOMA'; projectTitle.innerHTML = data.title; projectType.textContent = data.type + ' / Konsept'; projectPlace.textContent = data.place; projectScope.textContent = data.scope; projectLead.textContent = data.lead; projectStory.textContent = data.story; projectCover.style.backgroundImage = `url('${data.image}')`; galleryImage.src = data.image;</script>
 </body>
 
