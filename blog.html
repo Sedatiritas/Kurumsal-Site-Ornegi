@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mimarlık Günlüğü — NOMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4 px-xl-5"><a class="brand" href="index.html">NOMA<sup>®</sup></a><button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                    aria-label="Menüyü aç"><i></i><i></i></button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="calismalarimiz.html">Çalışmalarımız</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a class="active" href="notlar.html">Mimarlık Günlüğü</a></li>
+                        <li><a class="nav-button" href="iletisim.html">Proje Başlat <b>↗</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container-fluid px-4 px-xl-5"><a class="blog-back" href="notlar.html">← Mimarlık Günlüğü</a>
+                <p class="kicker mt-5" id="articleCategory">Malzeme</p>
+                <h1 id="articleTitle">Taşın zamanla<br><em>kurduğu ilişki.</em></h1>
+                <p id="articleLead">İyi seçilmiş bir taş yüzey, yıllar geçtikçe eskimez; kullanımla beraber karakter
+                    kazanır.</p>
+            </div>
+        </section>
+        <div class="blog-cover" id="blogCover" role="img" aria-label="Mimari yazı kapak görseli"></div>
+        <article class="space-xl">
+            <div class="container-fluid px-4 px-xl-5">
+                <div class="blog-content" id="articleBody">
+                    <p>Bir malzeme, yalnızca renk veya doku değildir. Işığa verdiği tepki, elin üzerindeki hissi ve
+                        zaman içindeki değişimi; mekânın duygusunu belirleyen ortak bir dil kurar.</p>
+                    <h2>Doğal bir ritim</h2>
+                    <p>Taşın yüzeyindeki küçük farklılıklar, mekanik tekrar yerine doğal bir ritim yaratır. Bu ritim,
+                        sade bir mimarinin ihtiyacı olan derinliği sessiz biçimde sağlar.</p>
+                    <p>Bu nedenle malzemeyi görsel bir kaplama gibi değil; ışık, oran ve kullanım ile birlikte davranan
+                        bir yapı taşı olarak düşünürüz.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>const articles = { tas: { category: 'Malzeme', title: 'Taşın zamanla<br><em>kurduğu ilişki.</em>', lead: 'İyi seçilmiş bir taş yüzey, yıllar geçtikçe eskimez; kullanımla beraber karakter kazanır.', image: 'public/project-bodrum.png', body: '<p>Bir malzeme, yalnızca renk veya doku değildir. Işığa verdiği tepki, elin üzerindeki hissi ve zaman içindeki değişimi; mekânın duygusunu belirleyen ortak bir dil kurar.</p><h2>Doğal bir ritim</h2><p>Taşın yüzeyindeki küçük farklılıklar, mekanik tekrar yerine doğal bir ritim yaratır. Bu ritim, sade bir mimarinin ihtiyacı olan derinliği sessiz biçimde sağlar.</p><p>Bu nedenle malzemeyi görsel bir kaplama gibi değil; ışık, oran ve kullanım ile birlikte davranan bir yapı taşı olarak düşünürüz.</p>' }, isik: { category: 'Işık', title: 'Günün ritmini içeri alan<br><em>açıklıklar.</em>', lead: 'Bir açıklığın ölçüsü, yönü ve eşiği; mekânın gün boyunca değişen karakterini belirler.', image: 'public/hero-architecture.png', body: '<p>Gün ışığı, mekânın en değişken malzemesidir. Tasarımda bir pencereyi yalnızca manzaraya açılan bir boşluk olarak değil, günün saatlerini kaydeden bir araç olarak ele alırız.</p><h2>Işığın yolu</h2><p>Güneşin geliş açısı, gölgenin derinliği ve yüzeylerin yansıtıcılığı birlikte düşünülür. Böylece günün farklı anları, mekânda farklı ama dengeli atmosferler yaratır.</p>' }, brief: { category: 'Süreç', title: 'İyi bir brief, iyi bir<br><em>başlangıçtır.</em>', lead: 'Projenin doğru sorularla başlaması, daha sonra alınacak yüzlerce kararı berraklaştırır.', image: 'public/project-library.png', body: '<p>Brief, yalnızca ihtiyaç listesi değildir. Kullanıcının alışkanlıklarını, arsanın imkânlarını ve projenin uzun vadeli hedeflerini aynı konuşmada bir araya getirir.</p><h2>Doğru sorular</h2><p>İlk toplantılarda mimari çözümlerden çok, doğru sorular önemlidir. Bu sorular tasarımın sınırlarını değil, ihtimallerini açar.</p>' }, esik: { category: 'Mekân', title: 'Eşikler: Odalar arasında değil,<br><em>deneyimler arasında.</em>', lead: 'Geçiş alanları, bir yapının sadece dolaşımını değil; temposunu da belirler.', image: 'public/hero-architecture.png', body: '<p>Koridor, giriş, avlu ya da daralan bir açıklık: Eşikler, bir hâlden diğerine geçişin mekânsal araçlarıdır.</p><h2>Beklemek için yer</h2><p>İyi bir eşik, kullanıcıya yön vermekle kalmaz; kısa bir durma ve bakma anı da sunar. Bu anlar, mekânın hafızada kalmasını sağlar.</p>' } }; const article = articles[new URLSearchParams(location.search).get('article')] || articles.tas; document.title = article.title.replace(/<[^>]*>/g, '') + ' — NOMA'; articleCategory.textContent = article.category; articleTitle.innerHTML = article.title; articleLead.textContent = article.lead; blogCover.style.backgroundImage = `url('${article.image}')`; articleBody.innerHTML = article.body;</script>
+</body>
+
+</html>
