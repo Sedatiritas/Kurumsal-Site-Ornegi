@@ -1833,3 +1833,123 @@ a {
         background-attachment: scroll
     }
 }
+
+/* Navbar: daha okunaklı bağlantılar ve belirgin etkileşim durumları */
+.navbar-nav {
+    gap: clamp(1rem, 1.8vw, 2rem);
+}
+
+.navbar-nav > li > a:not(.nav-button) {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.5rem;
+    padding: .45rem 0;
+    font-size: .84rem;
+    font-weight: 500;
+    letter-spacing: .015em;
+    opacity: .88;
+    transition: opacity .2s ease, color .2s ease;
+}
+
+.navbar-nav > li > a:not(.nav-button)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .12rem;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .22s ease;
+}
+
+.navbar-nav > li > a:not(.nav-button):hover,
+.navbar-nav > li > a:not(.nav-button):focus-visible,
+.navbar-nav > li > a:not(.nav-button).active {
+    opacity: 1;
+}
+
+.navbar-nav > li > a:not(.nav-button):hover::after,
+.navbar-nav > li > a:not(.nav-button):focus-visible::after,
+.navbar-nav > li > a:not(.nav-button).active::after {
+    transform: scaleX(1);
+}
+
+.navbar-nav a:focus-visible,
+.brand:focus-visible,
+.nav-button:focus-visible {
+    outline: 2px solid var(--terra);
+    outline-offset: 5px;
+    border-radius: 2px;
+}
+
+.nav-button {
+    padding: .68rem 1rem !important;
+    font-size: .8rem !important;
+    font-weight: 600;
+    letter-spacing: .015em;
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+    background: var(--terra);
+    border-color: var(--terra);
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-collapse {
+        margin-top: .85rem;
+        padding: .8rem 1rem 1rem;
+        background: var(--paper);
+        color: var(--ink);
+        border: 1px solid var(--line);
+        box-shadow: 0 12px 28px rgba(29, 37, 30, .12);
+    }
+
+    .home .navbar-collapse {
+        background: rgba(29, 37, 30, .96);
+        color: #fff;
+        border-color: rgba(255, 255, 255, .18);
+        backdrop-filter: blur(12px);
+    }
+
+    .navbar-nav {
+        align-items: stretch !important;
+        gap: .15rem;
+    }
+
+    .navbar-nav > li > a:not(.nav-button) {
+        display: flex;
+        width: 100%;
+        min-height: 2.75rem;
+        padding: .65rem .15rem;
+        font-size: .9rem;
+    }
+
+    .navbar-nav > li > a:not(.nav-button)::after {
+        right: auto;
+        width: 2.2rem;
+        bottom: .35rem;
+    }
+
+    .nav-button {
+        margin-top: .45rem;
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar-nav > li > a,
+    .navbar-nav > li > a::after,
+    .nav-button {
+        transition: none;
+    }
+}
